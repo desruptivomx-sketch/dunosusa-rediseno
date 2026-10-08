@@ -1,0 +1,25 @@
+@font-face{font-family:'Sink';src:local('Sink'),local('Sink Regular'),local('SINK');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Scrakers';src:local('Scrakers'),local('Scrakers Regular'),local('SCRAKERS');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Juturu';src:local('Juturu'),local('Juturu Regular'),local('JUTURU');font-style:normal;font-weight:100 900;font-display:swap}
+
+:root{
+  --font-head:'Sink','Paytone One',sans-serif;
+  --font-accent:'Scrakers','Sink','Paytone One',cursive;
+  --font-body:'Juturu','Nunito Sans',system-ui,sans-serif;
+}
+
+body,button,input,textarea,select{font-family:var(--font-body)}
+.nav,.search input,.store-pill,.eyebrow,.hero-lede,.hero-button,.yellow-button,.quick-access,.section-kicker,.offers-intro>p,.product-card h3,.product-card p,.finder,.finder-form input,.store-message,.category-head>p,.categories b,.footer p,.footer a,.concept-badge{font-family:var(--font-body)}
+
+.hero h1{font-family:var(--font-head);letter-spacing:-.035em}
+.hero h1 span{font-family:var(--font-head);font-style:normal;letter-spacing:-.035em}
+.hero h1 strong{font-family:var(--font-accent);font-style:normal;letter-spacing:0;line-height:.78}
+
+.offers-intro h2,.category-head h2{font-family:var(--font-head);letter-spacing:-.025em}
+.daily-copy,.fresh-copy{font-family:var(--font-accent);font-weight:400;letter-spacing:.01em}
+.price-tag,.footer strong,.brand-text{font-family:var(--font-head)}
+.price-tag em{font-family:var(--font-body)}
+
+@media(max-width:760px){
+  .hero h1 strong{line-height:.82}
+}
