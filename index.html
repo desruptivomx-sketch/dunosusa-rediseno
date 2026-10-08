@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&family=Paytone+One&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="img/tienda.svg">
   <link rel="preload" as="image" href="img/dunosusa-logo.svg">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <link rel="stylesheet" href="fonts.css?v=1">
   <link rel="stylesheet" href="logo.css?v=1">
 </head>
@@ -43,7 +43,9 @@
 
       <a class="store-pill" href="#tiendas">
         <span class="pin" aria-hidden="true">●</span>
-        <span>Mi tienda<br><strong>más cercana</strong></span>
+        <span>Mi tienda<br>
+<strong>más cercana</strong>
+</span>
       </a>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
@@ -55,17 +57,23 @@
       <div class="hero-grid wrap-wide">
         <div class="hero-copy">
           <p class="eyebrow">Tu súper de todos los días</p>
-          <h1 id="hero-title"><span>Siempre</span><strong>contigo</strong></h1>
+          <h1 id="hero-title">
+<span>Siempre</span>
+<strong>contigo</strong>
+</h1>
           <p class="hero-lede">Precios bajos para toda la familia.</p>
-          <a class="hero-button" href="#promociones">Ver promociones <span aria-hidden="true">→</span></a>
+          <a class="hero-button" href="#promociones">Ver promociones <span aria-hidden="true">→</span>
+</a>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="visual-blob"></div>
+          <div class="visual-blob">
+</div>
           <div class="fruit-card">
-            <img src="img/c-frutas.webp" alt="">
+            <img src="img/portada/28-slide-2-precio-bajo-diario.webp" alt="" width="1600" height="1400" loading="eager" decoding="async" fetchpriority="high">
           </div>
-          <div class="daily-copy">LO BUENO<br>DE TODOS<br>LOS DÍAS <span>☺</span></div>
+          <div class="daily-copy">LO BUENO<br>DE TODOS<br>LOS DÍAS <span>☺</span>
+</div>
           <span class="doodle doodle-a">—</span>
           <span class="doodle doodle-b">—</span>
           <span class="doodle doodle-c">—</span>
@@ -73,17 +81,33 @@
       </div>
 
       <div class="store-stage" aria-hidden="true">
-        <div class="sky-strip"></div>
+        <div class="sky-strip">
+</div>
         <img src="img/tienda.svg" alt="">
       </div>
     </section>
 
     <nav class="quick-access wrap" aria-label="Accesos rápidos">
-      <a href="#promociones"><span class="quick-icon">◆</span><b>Promociones</b></a>
-      <a href="#tiendas"><span class="quick-icon">●</span><b>Nuestras tiendas</b></a>
-      <a href="#productos"><span class="quick-icon">▾</span><b>Productos</b></a>
-      <a href="#promociones"><span class="quick-icon">▤</span><b>Folletos</b></a>
-      <a href="https://empleos.dunosusa.com.mx/"><span class="quick-icon">●●</span><b>Trabaja con nosotros</b></a>
+      <a href="#promociones">
+<span class="quick-icon">◆</span>
+<b>Promociones</b>
+</a>
+      <a href="#tiendas">
+<span class="quick-icon">●</span>
+<b>Nuestras tiendas</b>
+</a>
+      <a href="#productos">
+<span class="quick-icon">▾</span>
+<b>Productos</b>
+</a>
+      <a href="#temporadas">
+<span class="quick-icon">▤</span>
+<b>Temporadas</b>
+</a>
+      <a href="https://empleos.dunosusa.com.mx/">
+<span class="quick-icon">●●</span>
+<b>Trabaja con nosotros</b>
+</a>
     </nav>
 
     <section class="offers" id="promociones" aria-labelledby="offers-title">
@@ -91,33 +115,147 @@
         <div class="offers-intro">
           <p class="section-kicker">Promociones</p>
           <h2 id="offers-title">Ahorra<br>hoy en<br>tus favoritos</h2>
-          <p>Descubre ofertas en productos de uso diario.</p>
-          <a href="#productos" class="yellow-button">Ver más ofertas <span>→</span></a>
+          <p>Explora productos para tu día a día. Consulta precios y disponibilidad en tienda.</p>
+          <a href="#productos" class="yellow-button">Explorar productos <span>→</span>
+</a>
         </div>
 
         <div class="products-shell" id="productos">
           <button class="round-arrow prev" type="button" aria-label="Producto anterior">‹</button>
           <div class="products-track" id="products-track">
-            <article class="product-card" data-search="jitomate tomate frutas verduras kilo">
-              <div class="product-image"><img src="img/p-jitomate.webp" alt="Jitomate"></div>
-              <div class="price-tag"><small>$</small>19<sup>90</sup><em>/kg</em></div>
-              <h3>Jitomate saladet</h3>
-              <p>Kilo</p>
-            </article>
-
-            <article class="product-card" data-search="leche lacteos bebida litro">
-              <div class="product-image"><img src="img/p-leche.webp" alt="Leche"></div>
-              <div class="price-tag"><small>$</small>32<sup>00</sup><em>c/u</em></div>
-              <h3>Leche de la casa</h3>
-              <p>Presentación familiar</p>
-            </article>
-
-            <article class="product-card" data-search="carne res carnes kilo">
-              <div class="product-image"><img src="img/p-res.webp" alt="Carne de res"></div>
-              <div class="price-tag"><small>$</small>89<sup>90</sup><em>/kg</em></div>
-              <h3>Carne para tu mesa</h3>
-              <p>Kilo</p>
-            </article>
+<article class="product-card" data-search="aguacate frutas y verduras">
+<div class="product-image">
+<img src="img/productos/01-aguacate.webp" alt="Aguacate" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Aguacate</h3>
+<p>Frutas y verduras</p>
+</article>
+<article class="product-card" data-search="limón frutas y verduras">
+<div class="product-image">
+<img src="img/productos/02-limon.webp" alt="Limón" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Limón</h3>
+<p>Frutas y verduras</p>
+</article>
+<article class="product-card" data-search="papa frutas y verduras">
+<div class="product-image">
+<img src="img/productos/03-papa.webp" alt="Papa" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Papa</h3>
+<p>Frutas y verduras</p>
+</article>
+<article class="product-card" data-search="cebolla frutas y verduras">
+<div class="product-image">
+<img src="img/productos/04-cebolla.webp" alt="Cebolla" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Cebolla</h3>
+<p>Frutas y verduras</p>
+</article>
+<article class="product-card" data-search="naranja frutas y verduras">
+<div class="product-image">
+<img src="img/productos/05-naranja.webp" alt="Naranja" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Naranja</h3>
+<p>Frutas y verduras</p>
+</article>
+<article class="product-card" data-search="manzana frutas y verduras">
+<div class="product-image">
+<img src="img/productos/06-manzana.webp" alt="Manzana" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Manzana</h3>
+<p>Frutas y verduras</p>
+</article>
+<article class="product-card" data-search="pollo entero carnes">
+<div class="product-image">
+<img src="img/productos/07-pollo-entero.webp" alt="Pollo entero" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Pollo entero</h3>
+<p>Carnes</p>
+</article>
+<article class="product-card" data-search="carne molida carnes">
+<div class="product-image">
+<img src="img/productos/08-carne-molida.webp" alt="Carne molida" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Carne molida</h3>
+<p>Carnes</p>
+</article>
+<article class="product-card" data-search="chuleta de cerdo carnes">
+<div class="product-image">
+<img src="img/productos/09-chuleta-de-cerdo.webp" alt="Chuleta de cerdo" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Chuleta de cerdo</h3>
+<p>Carnes</p>
+</article>
+<article class="product-card" data-search="yogur lácteos">
+<div class="product-image">
+<img src="img/productos/10-yogur.webp" alt="Yogur" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Yogur</h3>
+<p>Lácteos</p>
+</article>
+<article class="product-card" data-search="crema lácteos">
+<div class="product-image">
+<img src="img/productos/11-crema.webp" alt="Crema" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Crema</h3>
+<p>Lácteos</p>
+</article>
+<article class="product-card" data-search="mantequilla lácteos">
+<div class="product-image">
+<img src="img/productos/12-mantequilla.webp" alt="Mantequilla" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Mantequilla</h3>
+<p>Lácteos</p>
+</article>
+<article class="product-card" data-search="tortillas de harina panadería y abarrotes">
+<div class="product-image">
+<img src="img/productos/13-tortillas-de-harina.webp" alt="Tortillas de harina" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Tortillas de harina</h3>
+<p>Panadería y abarrotes</p>
+</article>
+<article class="product-card" data-search="pan de caja panadería y abarrotes">
+<div class="product-image">
+<img src="img/productos/14-pan-de-caja.webp" alt="Pan de caja" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Pan de caja</h3>
+<p>Panadería y abarrotes</p>
+</article>
+<article class="product-card" data-search="galletas panadería y abarrotes">
+<div class="product-image">
+<img src="img/productos/15-galletas.webp" alt="Galletas" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Galletas</h3>
+<p>Panadería y abarrotes</p>
+</article>
+<article class="product-card" data-search="azúcar 1 kg panadería y abarrotes">
+<div class="product-image">
+<img src="img/productos/16-azucar-1-kg.webp" alt="Azúcar 1 kg" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Azúcar 1 kg</h3>
+<p>Panadería y abarrotes</p>
+</article>
+<article class="product-card" data-search="harina 1 kg panadería y abarrotes">
+<div class="product-image">
+<img src="img/productos/17-harina-1-kg.webp" alt="Harina 1 kg" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Harina 1 kg</h3>
+<p>Panadería y abarrotes</p>
+</article>
+<article class="product-card" data-search="agua 1.5 l bebidas">
+<div class="product-image">
+<img src="img/productos/18-agua-1-5-l.webp" alt="Agua 1.5 L" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Agua 1.5 L</h3>
+<p>Bebidas</p>
+</article>
+<article class="product-card" data-search="jugo 1 l bebidas">
+<div class="product-image">
+<img src="img/productos/19-jugo-1-l.webp" alt="Jugo 1 L" width="800" height="604" loading="lazy" decoding="async">
+</div>
+<h3>Jugo 1 L</h3>
+<p>Bebidas</p>
+</article>
           </div>
           <button class="round-arrow next" type="button" aria-label="Producto siguiente">›</button>
         </div>
@@ -126,44 +264,312 @@
 
     <section class="fresh-banner" aria-label="Frescura, calidad y ahorro">
       <div class="fresh-photo">
-        <img src="img/c-frutas.webp" alt="Frutas y verduras frescas">
+        <img src="img/equipo/30-interior-de-tienda.webp" alt="Pasillo de supermercado con frutas y verduras" width="1600" height="1200" loading="lazy" decoding="async">
         <div class="fresh-copy">Frescura,<br>calidad<br>y ahorro</div>
       </div>
       <div class="finder" id="tiendas">
-        <div class="finder-title"><span class="finder-pin">●</span><strong>Encuentra tu<br>tienda más cercana</strong></div>
+        <div class="finder-title">
+<span class="finder-pin">●</span>
+<strong>Encuentra tu<br>tienda más cercana</strong>
+</div>
         <form id="store-form" class="finder-form">
           <label class="sr-only" for="store-query">Tu ciudad o código postal</label>
           <input id="store-query" type="text" placeholder="Tu ciudad o código postal">
           <button type="submit" aria-label="Buscar tienda">⌕</button>
         </form>
-        <p id="store-message" class="store-message" aria-live="polite"></p>
+        <p id="store-message" class="store-message" aria-live="polite">
+</p>
       </div>
     </section>
 
-    <section class="category-section wrap" id="nosotros">
+    <section class="category-section wrap" id="categorias">
       <div class="category-head">
-        <div><p class="section-kicker">Todo en un solo lugar</p><h2>Lo que necesitas, más cerca.</h2></div>
+        <div>
+<p class="section-kicker">Todo en un solo lugar</p>
+<h2>Lo que necesitas, más cerca.</h2>
+</div>
         <p>Una experiencia más simple para encontrar ofertas, categorías y la sucursal que te queda mejor.</p>
       </div>
       <div class="categories">
-        <article><img src="img/c-abarrotes.webp" alt="Abarrotes"><b>Abarrotes</b></article>
-        <article><img src="img/c-frutas.webp" alt="Frutas y verduras"><b>Frutas y verduras</b></article>
-        <article><img src="img/c-carnes.webp" alt="Carnes"><b>Carnes</b></article>
-        <article><img src="img/c-lacteos.webp" alt="Lácteos"><b>Lácteos</b></article>
-        <article><img src="img/c-limpieza.webp" alt="Limpieza"><b>Limpieza</b></article>
-      </div>
+<article>
+<img src="img/productos/16-azucar-1-kg.webp" alt="Abarrotes" width="800" height="604" loading="lazy" decoding="async">
+<b>Abarrotes</b>
+</article>
+<article>
+<img src="img/productos/05-naranja.webp" alt="Frutas y verduras" width="800" height="604" loading="lazy" decoding="async">
+<b>Frutas y verduras</b>
+</article>
+<article>
+<img src="img/productos/07-pollo-entero.webp" alt="Carnes" width="800" height="604" loading="lazy" decoding="async">
+<b>Carnes</b>
+</article>
+<article>
+<img src="img/productos/10-yogur.webp" alt="Lácteos" width="800" height="604" loading="lazy" decoding="async">
+<b>Lácteos</b>
+</article>
+<article>
+<img src="img/categorias/20-bebidas.webp" alt="Bebidas" width="800" height="700" loading="lazy" decoding="async">
+<b>Bebidas</b>
+</article>
+<article>
+<img src="img/categorias/21-salchichoneria.webp" alt="Salchichonería" width="800" height="700" loading="lazy" decoding="async">
+<b>Salchichonería</b>
+</article>
+<article>
+<img src="img/categorias/22-panaderia-y-tortilleria.webp" alt="Panadería y tortillería" width="800" height="700" loading="lazy" decoding="async">
+<b>Panadería y tortillería</b>
+</article>
+<article>
+<img src="img/categorias/23-higiene-personal.webp" alt="Higiene personal" width="800" height="700" loading="lazy" decoding="async">
+<b>Higiene personal</b>
+</article>
+<article>
+<img src="img/categorias/24-bebes.webp" alt="Bebés" width="800" height="700" loading="lazy" decoding="async">
+<b>Bebés</b>
+</article>
+<article>
+<img src="img/categorias/25-mascotas.webp" alt="Mascotas" width="800" height="700" loading="lazy" decoding="async">
+<b>Mascotas</b>
+</article>
+<article>
+<img src="img/categorias/26-dulces-y-botanas.webp" alt="Dulces y botanas" width="800" height="700" loading="lazy" decoding="async">
+<b>Dulces y botanas</b>
+</article>
+<article>
+<img src="img/categorias/27-congelados.webp" alt="Congelados" width="800" height="700" loading="lazy" decoding="async">
+<b>Congelados</b>
+</article>      </div>
     </section>
+<section class="content-section wrap" id="temporadas">
+<div class="section-heading">
+<div>
+<p class="section-kicker">Cada temporada</p>
+<h2>Momentos para compartir</h2>
+</div>
+<p>Ideas para acompañarte durante el año.</p>
+</div>
+<div class="season-grid">
+<figure class="season-card">
+<img src="img/banners/50-hanal-pixan-octubre-y-noviembre.webp" alt="Hanal Pixán" width="1600" height="600" loading="lazy" decoding="async">
+<figcaption>Hanal Pixán</figcaption>
+</figure>
+<figure class="season-card">
+<img src="img/banners/51-buen-fin-noviembre.webp" alt="Ahorro para tu despensa" width="1600" height="600" loading="lazy" decoding="async">
+<figcaption>Ahorro para tu despensa</figcaption>
+</figure>
+<figure class="season-card">
+<img src="img/banners/52-navidad-y-fin-de-ano.webp" alt="Comparte la Navidad" width="1600" height="600" loading="lazy" decoding="async">
+<figcaption>Comparte la Navidad</figcaption>
+</figure>
+<figure class="season-card">
+<img src="img/banners/53-regreso-a-clases.webp" alt="De vuelta a clases" width="1600" height="600" loading="lazy" decoding="async">
+<figcaption>De vuelta a clases</figcaption>
+</figure>
+</div>
+</section>
+<section class="services-section" id="servicios">
+<div class="wrap">
+<div class="section-heading">
+<div>
+<p class="section-kicker">Más cerca de ti</p>
+<h2>Más que tu despensa</h2>
+</div>
+<p>Conoce las opciones de servicio. Disponibilidad sujeta a cada sucursal.</p>
+</div>
+<div class="service-grid">
+<article class="photo-card">
+<img src="img/servicios/35-dunofrias-cerveza-fria.webp" alt="Dunofrías" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Dunofrías</h3>
+<p>Bebidas frías para compartir.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/36-vinos-y-licores.webp" alt="Vinos y licores" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Vinos y licores</h3>
+<p>Opciones para tus celebraciones.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/37-congelados.webp" alt="Congelados" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Congelados</h3>
+<p>Practicidad para cada comida.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/38-despensas-armadas.webp" alt="Despensas armadas" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Despensas armadas</h3>
+<p>Los básicos de tu hogar, juntos.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/39-western-union.webp" alt="Envíos de dinero" width="1400" height="1400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Envíos de dinero</h3>
+<p>Consulta las opciones de envío y recepción en tienda.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/40-amazon-hub.webp" alt="Recepción de paquetes" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Recepción de paquetes</h3>
+<p>Consulta los puntos participantes.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/41-tarjeta-va-y-ven.webp" alt="Recargas de transporte" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Recargas de transporte</h3>
+<p>Pregunta por los servicios disponibles.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/servicios/42-el-sembrador.webp" alt="Atención al cliente" width="400" height="400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Atención al cliente</h3>
+<p>Estamos para orientarte.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="content-section wrap" id="pickup">
+<div class="section-heading">
+<div>
+<p class="section-kicker">Compra a tu ritmo</p>
+<h2>Tu compra, lista para llevar</h2>
+</div>
+<p>Una propuesta de recolección sencilla para tu día a día.</p>
+</div>
+<div class="pickup-feature">
+<img src="img/portada/29-slide-3-pedido-en-el-coche.webp" alt="Entrega de bolsas de supermercado junto a un automóvil" width="1600" height="1400" loading="lazy" decoding="async">
+<div>
+<p class="section-kicker">Pickup</p>
+<h3>Más tiempo para lo que importa</h3>
+<p>Prepara tu lista y consulta en tu tienda las opciones de compra y recolección.</p>
+<a class="yellow-button" href="#tiendas">Encuentra tu tienda →</a>
+</div>
+</div>
+<div class="pickup-grid">
+<article class="photo-card">
+<img src="img/pickup/43-cajon-de-estacionamiento-pickup.webp" alt="Un espacio para recoger" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Un espacio para recoger</h3>
+<p>Consulta los puntos de recolección disponibles.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/pickup/44-bolsas-listas-para-entrega.webp" alt="Todo listo para ti" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Todo listo para ti</h3>
+<p>Tus productos reunidos en un mismo pedido.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/pickup/45-ticket-real-ubicacion-del-folio.webp" alt="Conserva tu ticket" width="1050" height="1400" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Conserva tu ticket</h3>
+<p>Guarda tu comprobante y consulta en tienda cómo solicitar tu factura. Imagen ilustrativa.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="content-section wrap" id="nosotros">
+<div class="section-heading">
+<div>
+<p class="section-kicker">Siempre contigo</p>
+<h2>Personas que hacen la diferencia</h2>
+</div>
+<p>Una mirada ilustrativa al trabajo que acompaña tus compras.</p>
+</div>
+<div class="people-grid">
+<article class="photo-card">
+<img src="img/equipo/31-cajera-o-cajero.webp" alt="Atención cercana" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Atención cercana</h3>
+<p>Una experiencia amable en cada compra.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/equipo/32-tendero-mayoreo.webp" alt="Para tu negocio" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Para tu negocio</h3>
+<p>Productos para surtir tu tienda y acompañar tu trabajo.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/equipo/33-equipo-trabaja-con-nosotros.webp" alt="Crece con nosotros" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Crece con nosotros</h3>
+<p>Conoce las oportunidades para formar parte del equipo.</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/equipo/34-distribucion-proveedores.webp" alt="Cada entrega cuenta" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Cada entrega cuenta</h3>
+<p>Abastecimiento para estar cerca de tu comunidad.</p>
+</div>
+</article>
+</div>
+<p class="section-action">
+<a class="yellow-button" href="https://empleos.dunosusa.com.mx/">Ver oportunidades de empleo →</a>
+</p>
+<details class="history-gallery">
+<summary>Comercio y comunidad: una mirada ilustrativa <span aria-hidden="true">+</span>
+</summary>
+<p>Escenas genéricas creadas para esta propuesta visual; no son fotografías históricas ni retratos de personas o sucursales reales.</p>
+<div class="history-grid">
+<article class="photo-card">
+<img src="img/historia/46-bodega-de-la-calle-46.webp" alt="El trabajo detrás de cada despensa" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>El trabajo detrás de cada despensa</h3>
+<p>
+</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/historia/47-una-de-las-primeras-tiendas.webp" alt="La tienda de barrio" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>La tienda de barrio</h3>
+<p>
+</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/historia/48-tienda-500-vista-alegre-2019.webp" alt="Cerca de cada comunidad" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>Cerca de cada comunidad</h3>
+<p>
+</p>
+</div>
+</article>
+<article class="photo-card">
+<img src="img/historia/49-fundadores-o-familia.webp" alt="El comercio en familia" width="1600" height="1200" loading="lazy" decoding="async">
+<div class="photo-copy">
+<h3>El comercio en familia</h3>
+<p>
+</p>
+</div>
+</article>
+</div>
+</details>
+</section>
   </main>
 
   <footer id="contacto" class="footer">
     <div class="wrap footer-inner">
       <strong>Dunosusa.</strong>
-      <p>Propuesta conceptual de rediseño elaborada por Desruptivo. No es el sitio oficial.</p>
+      <p>Propuesta conceptual de rediseño elaborada por Desruptivo. No es el sitio oficial. Imágenes ilustrativas generadas con IA.</p>
       <a href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
 
   <div class="concept-badge">Concepto · Desruptivo</div>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5">
+</script>
 </body>
 </html>

@@ -1,0 +1,532 @@
+[
+  {
+    "id": "01",
+    "name": "Aguacate",
+    "path": "img/productos/01-aguacate.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "xSzJavLjfW",
+    "transparent": true,
+    "bytes": 74176
+  },
+  {
+    "id": "02",
+    "name": "Limón",
+    "path": "img/productos/02-limon.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "s7WPEKXl8e",
+    "transparent": true,
+    "bytes": 52290
+  },
+  {
+    "id": "03",
+    "name": "Papa",
+    "path": "img/productos/03-papa.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "79D3bgUJAL",
+    "transparent": true,
+    "bytes": 37498
+  },
+  {
+    "id": "04",
+    "name": "Cebolla",
+    "path": "img/productos/04-cebolla.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "8alun8mIrU",
+    "transparent": true,
+    "bytes": 29448
+  },
+  {
+    "id": "05",
+    "name": "Naranja",
+    "path": "img/productos/05-naranja.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "u54rdq0QLD",
+    "transparent": true,
+    "bytes": 69670
+  },
+  {
+    "id": "06",
+    "name": "Manzana",
+    "path": "img/productos/06-manzana.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "dtxaAmTXSL",
+    "transparent": true,
+    "bytes": 43310
+  },
+  {
+    "id": "07",
+    "name": "Pollo entero",
+    "path": "img/productos/07-pollo-entero.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "w4Mib3P7EI",
+    "transparent": true,
+    "bytes": 39088
+  },
+  {
+    "id": "08",
+    "name": "Carne molida",
+    "path": "img/productos/08-carne-molida.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "ks2UhyL16B",
+    "transparent": true,
+    "bytes": 83778
+  },
+  {
+    "id": "09",
+    "name": "Chuleta de cerdo",
+    "path": "img/productos/09-chuleta-de-cerdo.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "5jRgtPrKxe",
+    "transparent": true,
+    "bytes": 66874
+  },
+  {
+    "id": "10",
+    "name": "Yogur",
+    "path": "img/productos/10-yogur.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "WDFX4uOcXe",
+    "transparent": true,
+    "bytes": 30474
+  },
+  {
+    "id": "11",
+    "name": "Crema",
+    "path": "img/productos/11-crema.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "XmjfGsaBfo",
+    "transparent": true,
+    "bytes": 34116
+  },
+  {
+    "id": "12",
+    "name": "Mantequilla",
+    "path": "img/productos/12-mantequilla.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "s7WPuMXl8e",
+    "transparent": true,
+    "bytes": 24436
+  },
+  {
+    "id": "13",
+    "name": "Tortillas de harina",
+    "path": "img/productos/13-tortillas-de-harina.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "BhLCzJdoQR",
+    "transparent": true,
+    "bytes": 49822
+  },
+  {
+    "id": "14",
+    "name": "Pan de caja",
+    "path": "img/productos/14-pan-de-caja.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "UPV6qtkwny",
+    "transparent": true,
+    "bytes": 71386
+  },
+  {
+    "id": "15",
+    "name": "Galletas",
+    "path": "img/productos/15-galletas.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "eIrv24rdqL",
+    "transparent": true,
+    "bytes": 68214
+  },
+  {
+    "id": "16",
+    "name": "Azúcar 1 kg",
+    "path": "img/productos/16-azucar-1-kg.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "gO09FqPSXO",
+    "transparent": true,
+    "bytes": 18280
+  },
+  {
+    "id": "17",
+    "name": "Harina 1 kg",
+    "path": "img/productos/17-harina-1-kg.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "Tdb86ZyVNR",
+    "transparent": true,
+    "bytes": 16936
+  },
+  {
+    "id": "18",
+    "name": "Agua 1.5 L",
+    "path": "img/productos/18-agua-1-5-l.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "VX5IinqMMU",
+    "transparent": true,
+    "bytes": 20858
+  },
+  {
+    "id": "19",
+    "name": "Jugo 1 L",
+    "path": "img/productos/19-jugo-1-l.webp",
+    "width": 800,
+    "height": 604,
+    "magnific_id": "5jRgtHoKxe",
+    "transparent": true,
+    "bytes": 14594
+  },
+  {
+    "id": "20",
+    "name": "Bebidas",
+    "path": "img/categorias/20-bebidas.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "YMQd9egWeC",
+    "transparent": true,
+    "bytes": 26566
+  },
+  {
+    "id": "21",
+    "name": "Salchichonería",
+    "path": "img/categorias/21-salchichoneria.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "huwqMqYvqL",
+    "transparent": true,
+    "bytes": 61974
+  },
+  {
+    "id": "22",
+    "name": "Panadería y tortillería",
+    "path": "img/categorias/22-panaderia-y-tortilleria.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "YMQd9XUWeC",
+    "transparent": true,
+    "bytes": 53830
+  },
+  {
+    "id": "23",
+    "name": "Higiene personal",
+    "path": "img/categorias/23-higiene-personal.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "SyTNbiEUb8",
+    "transparent": true,
+    "bytes": 18708
+  },
+  {
+    "id": "24",
+    "name": "Bebés",
+    "path": "img/categorias/24-bebes.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "SyTNb3aUb8",
+    "transparent": true,
+    "bytes": 19582
+  },
+  {
+    "id": "25",
+    "name": "Mascotas",
+    "path": "img/categorias/25-mascotas.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "u54rBsXQLD",
+    "transparent": true,
+    "bytes": 37288
+  },
+  {
+    "id": "26",
+    "name": "Dulces y botanas",
+    "path": "img/categorias/26-dulces-y-botanas.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "KLZSvywkqp",
+    "transparent": true,
+    "bytes": 43062
+  },
+  {
+    "id": "27",
+    "name": "Congelados",
+    "path": "img/categorias/27-congelados.webp",
+    "width": 800,
+    "height": 700,
+    "magnific_id": "yid2xcIPW9",
+    "transparent": true,
+    "bytes": 36650
+  },
+  {
+    "id": "28",
+    "name": "Slide 2 · Precio bajo diario",
+    "path": "img/portada/28-slide-2-precio-bajo-diario.webp",
+    "width": 1600,
+    "height": 1400,
+    "magnific_id": "s7WP5ZRl8e",
+    "transparent": false,
+    "bytes": 259842
+  },
+  {
+    "id": "29",
+    "name": "Slide 3 · Pedido en el coche",
+    "path": "img/portada/29-slide-3-pedido-en-el-coche.webp",
+    "width": 1600,
+    "height": 1400,
+    "magnific_id": "SyTN1nHUb8",
+    "transparent": false,
+    "bytes": 185864
+  },
+  {
+    "id": "30",
+    "name": "Interior de tienda",
+    "path": "img/equipo/30-interior-de-tienda.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "jUnOqAyLD0",
+    "transparent": false,
+    "bytes": 282480
+  },
+  {
+    "id": "31",
+    "name": "Cajera o cajero",
+    "path": "img/equipo/31-cajera-o-cajero.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "YMQd3E9WeC",
+    "transparent": false,
+    "bytes": 113852
+  },
+  {
+    "id": "32",
+    "name": "Tendero · Mayoreo",
+    "path": "img/equipo/32-tendero-mayoreo.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "LwYybWSswO",
+    "transparent": false,
+    "bytes": 136634
+  },
+  {
+    "id": "33",
+    "name": "Equipo · Trabaja con nosotros",
+    "path": "img/equipo/33-equipo-trabaja-con-nosotros.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "VX5IGkRMMU",
+    "transparent": false,
+    "bytes": 203342
+  },
+  {
+    "id": "34",
+    "name": "Distribución · Proveedores",
+    "path": "img/equipo/34-distribucion-proveedores.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "9ZozUmxNYZ",
+    "transparent": false,
+    "bytes": 152868
+  },
+  {
+    "id": "35",
+    "name": "Dunofrías · Cerveza fría",
+    "path": "img/servicios/35-dunofrias-cerveza-fria.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "BhLCY5RoQR",
+    "transparent": false,
+    "bytes": 15328
+  },
+  {
+    "id": "36",
+    "name": "Vinos y licores",
+    "path": "img/servicios/36-vinos-y-licores.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "VX5IRuNMMU",
+    "transparent": false,
+    "bytes": 6148
+  },
+  {
+    "id": "37",
+    "name": "Congelados",
+    "path": "img/servicios/37-congelados.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "dtxazKtXSL",
+    "transparent": false,
+    "bytes": 15564
+  },
+  {
+    "id": "38",
+    "name": "Despensas armadas",
+    "path": "img/servicios/38-despensas-armadas.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "KLZSvi4kqp",
+    "transparent": false,
+    "bytes": 8254
+  },
+  {
+    "id": "39",
+    "name": "Western Union",
+    "path": "img/servicios/39-western-union.webp",
+    "width": 1400,
+    "height": 1400,
+    "magnific_id": "DokmcjVpcl",
+    "transparent": false,
+    "bytes": 85886
+  },
+  {
+    "id": "40",
+    "name": "Amazon Hub",
+    "path": "img/servicios/40-amazon-hub.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "gO09qcYSXO",
+    "transparent": false,
+    "bytes": 5430
+  },
+  {
+    "id": "41",
+    "name": "Tarjeta Va y Ven",
+    "path": "img/servicios/41-tarjeta-va-y-ven.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "4RBGSmE9Aa",
+    "transparent": false,
+    "bytes": 10044
+  },
+  {
+    "id": "42",
+    "name": "El Sembrador",
+    "path": "img/servicios/42-el-sembrador.webp",
+    "width": 400,
+    "height": 400,
+    "magnific_id": "YMQd3KAWeC",
+    "transparent": false,
+    "bytes": 10618
+  },
+  {
+    "id": "43",
+    "name": "Cajón de estacionamiento pickup",
+    "path": "img/pickup/43-cajon-de-estacionamiento-pickup.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "79D3jQaJAL",
+    "transparent": false,
+    "bytes": 259044
+  },
+  {
+    "id": "44",
+    "name": "Bolsas listas para entrega",
+    "path": "img/pickup/44-bolsas-listas-para-entrega.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "iGtWJjr3uK",
+    "transparent": false,
+    "bytes": 103046
+  },
+  {
+    "id": "45",
+    "name": "Ticket real · Ubicación del folio",
+    "path": "img/pickup/45-ticket-real-ubicacion-del-folio.webp",
+    "width": 1050,
+    "height": 1400,
+    "magnific_id": "ks2UumW16B",
+    "transparent": false,
+    "bytes": 42944
+  },
+  {
+    "id": "46",
+    "name": "Bodega de la calle 46",
+    "path": "img/historia/46-bodega-de-la-calle-46.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "iGtWJgs3uK",
+    "transparent": false,
+    "bytes": 188122
+  },
+  {
+    "id": "47",
+    "name": "Una de las primeras tiendas",
+    "path": "img/historia/47-una-de-las-primeras-tiendas.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "KLZSEaBkqp",
+    "transparent": false,
+    "bytes": 191246
+  },
+  {
+    "id": "48",
+    "name": "Tienda 500 · Vista Alegre, 2019",
+    "path": "img/historia/48-tienda-500-vista-alegre-2019.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "3zmcOJ6REY",
+    "transparent": false,
+    "bytes": 153990
+  },
+  {
+    "id": "49",
+    "name": "Fundadores o familia",
+    "path": "img/historia/49-fundadores-o-familia.webp",
+    "width": 1600,
+    "height": 1200,
+    "magnific_id": "JNpRLl5Oq4",
+    "transparent": false,
+    "bytes": 166908
+  },
+  {
+    "id": "50",
+    "name": "Hanal Pixán · Octubre y noviembre",
+    "path": "img/banners/50-hanal-pixan-octubre-y-noviembre.webp",
+    "width": 1600,
+    "height": 600,
+    "magnific_id": "Dokmn0Lpcl",
+    "transparent": false,
+    "bytes": 54514
+  },
+  {
+    "id": "51",
+    "name": "Buen Fin · Noviembre",
+    "path": "img/banners/51-buen-fin-noviembre.webp",
+    "width": 1600,
+    "height": 600,
+    "magnific_id": "YMQd3zQWeC",
+    "transparent": false,
+    "bytes": 46194
+  },
+  {
+    "id": "52",
+    "name": "Navidad y fin de año",
+    "path": "img/banners/52-navidad-y-fin-de-ano.webp",
+    "width": 1600,
+    "height": 600,
+    "magnific_id": "ovsEVBc829",
+    "transparent": false,
+    "bytes": 51780
+  },
+  {
+    "id": "53",
+    "name": "Regreso a clases",
+    "path": "img/banners/53-regreso-a-clases.webp",
+    "width": 1600,
+    "height": 600,
+    "magnific_id": "xSzJqLXjfW",
+    "transparent": false,
+    "bytes": 44218
+  }
+]

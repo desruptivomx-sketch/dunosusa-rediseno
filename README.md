@@ -1,35 +1,35 @@
 # Propuesta de rediseño: Dunosusa
 
-Propuesta de sitio web para [Abarrotes Dunosusa](https://www.dunosusa.com.mx) elaborada por **Desruptivo, Agencia Creativa Integral**.
+Propuesta de sitio web para [Abarrotes Dunosusa](https://www.dunosusa.com.mx), elaborada por **Desruptivo, Agencia Creativa Integral**. No es el sitio oficial; conserva `noindex`.
 
-No es el sitio oficial. La página lleva `noindex` para que Google no la muestre en lugar del sitio real. Precios, ilustraciones y listado de tiendas son de muestra.
+## Recursos visuales
 
-## Versión 2: "Tu Dunosusa, más cerca"
+La página incorpora las **53 imágenes finales generadas en Magnific**, alojadas dentro del repositorio y optimizadas en WebP (aproximadamente 3,9 MB en conjunto). No depende de enlaces temporales del generador.
 
-Sigue la estructura del mockup de referencia: crema, rojo, azul marino y amarillo, con cintas rojas y sellos amarillos.
+- `img/productos/`: 19 productos con transparencia.
+- `img/categorias/`: 8 categorías con transparencia.
+- `img/portada/`: compra familiar y entrega pickup.
+- `img/equipo/`: interior, atención, mayoreo, equipo y distribución.
+- `img/servicios/`: 8 imágenes de servicios; entrega de dinero regenerada desde cero, sin logotipo ni cuadro blanco.
+- `img/pickup/`: estacionamiento, bolsas y comprobante ilustrativo.
+- `img/historia/`: 4 escenas genéricas en una galería desplegable, identificadas como ilustrativas, no como documentación histórica.
+- `img/banners/`: 4 temporadas, sin texto, botones ni gráficos superpuestos en la imagen. Los títulos se muestran como HTML fuera de ella.
+- `assets-manifest.json`: correspondencia de ID, nombre, archivo, dimensiones, transparencia, peso e identificador de Magnific.
 
-- **Banderola animada "¡Cerca de ti!"** en la portada: la cinta ondea y el texto se desliza sobre ella. Se pausa fuera de pantalla y con "reducir movimiento".
-- **Promos de la semana en movimiento:** anaquel que avanza solo, con productos grandes y chicos y etiqueta amarilla de precio. Se pausa con el cursor o con el botón "Pausar".
-- **Mi lista:** el botón "+" agrega productos; la lista se envía por WhatsApp o se lleva a pickup.
-- **Catálogo completo** desde "Ver todas las promociones", el buscador del header o cada categoría, con filtros por departamento.
-- Se conservan las correcciones de la versión 1: buscador de tiendas con GPS, pickup en 3 pasos, facturación con requisitos a la vista, servicios con nombre y descripción, entradas para tenderos, proveedores y empleo, y footer único con horarios por pestaña.
+Los SVG anteriores permanecen disponibles; la fachada de la portada conserva su ilustración original. Las imágenes fuera de la portada tienen carga diferida y dimensiones declaradas. Los primeros 27 archivos WebP conservan canal alfa.
 
-El botón **"Ver qué cambia"** muestra notas de antes y después en cada sección, para presentar la propuesta.
+## Funcionalidad
 
-## Pendientes antes de publicarlo como sitio oficial
+Anaquel horizontal de 19 productos, búsqueda por producto o categoría (sin distinguir acentos), menú móvil, categorías, temporadas, servicios, pickup y equipo. El formulario de tiendas sigue siendo una demostración. Las imágenes no representan marcas de productos, personal, sucursales o hechos históricos verificados. No se asignaron precios ficticios a los productos nuevos.
 
-- **Imágenes:** las de `img/` son ilustraciones vectoriales provisionales hechas por Desruptivo. Reemplazar por fotos reales del catálogo y de una tienda (mismo nombre de archivo, formato 4:3 para productos).
-- Conectar las promociones al catálogo semanal real.
-- Conectar el buscador de tiendas al listado completo con coordenadas.
-- Confirmar la paleta y tipografías con el manual de marca de Dunosusa.
-- Confirmar El Sembrador, Va y Ven, Despensas, la página de terrenos y la regla de facturación del mes en curso.
-- Subir el logotipo al repositorio. Por ahora se carga desde `dunosusa.com.mx`.
-- Mover el portal de facturación a https.
-- Quitar la barra de "propuesta", el botón de notas y la etiqueta `noindex`.
+## Desarrollo local
 
-## Archivos
+Sitio estático, sin paso de compilación:
 
-- `index.html`: página principal
-- `styles.css`: estilos
-- `script.js`: anaquel animado, lista, catálogo, buscador de tiendas, menú, horarios y notas
-- `img/`: ilustraciones provisionales (SVG)
+```sh
+python3 -m http.server 8765
+```
+
+Abrir `http://localhost:8765`. Archivos principales: `index.html`, `styles.css`, `fonts.css` y `script.js`.
+
+Antes de convertirlo en sitio oficial: conectar catálogo, promociones y directorio de tiendas reales; confirmar disponibilidad de servicios; validar imágenes, textos y tipografías con la marca. Se conserva el logotipo vectorial local incorporado recientemente al encabezado.

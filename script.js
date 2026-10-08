@@ -49,11 +49,12 @@
 
   searchForm?.addEventListener('submit', (event) => {
     event.preventDefault();
-    const query = (searchInput?.value || '').trim().toLowerCase();
+    const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const query = normalize((searchInput?.value || '').trim());
     if (!query) return;
 
     const cards = qsa('.product-card');
-    const hit = cards.find((card) => (card.dataset.search || '').includes(query) || card.textContent.toLowerCase().includes(query));
+    const hit = cards.find((card) => normalize((card.dataset.search || '') + ' ' + card.textContent).includes(query));
 
     if (!hit) {
       searchInput.setCustomValidity('No encontramos ese producto en las promociones de muestra.');
@@ -62,7 +63,7 @@
       return;
     }
 
-    qs('#promociones')?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+    hit.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center', inline: 'center' });
     if (!reduceMotion) {
       setTimeout(() => {
         hit.animate([
@@ -279,7 +280,7 @@
       element.style.opacity = '0';
       element.dataset.motionAxis = axis;
       element.dataset.motionAmount = String(amount);
-      element.dataset.motionDelay = String(index * stagger);
+      element.dataset.motionDelay = String((index % 4) * stagger);
       revealObserver.observe(element);
     });
   });
