@@ -2,11 +2,11 @@
 
 Propuesta de sitio web para [Abarrotes Dunosusa](https://www.dunosusa.com.mx) elaborada por **Desruptivo, Agencia Creativa Integral**.
 
-No es el sitio oficial. La página lleva `noindex` para que Google no la muestre en lugar del sitio real. Precios, fotos y listado de tiendas son de muestra.
+No es el sitio oficial. La página lleva `noindex` para que Google no la muestre en lugar del sitio real. Precios, ilustraciones y listado de tiendas son de muestra.
 
 ## Versión 2: "Tu Dunosusa, más cerca"
 
-Reconstruida sobre el mockup visual aprobado: crema, rojo, azul marino y amarillo, con cintas rojas y sellos amarillos.
+Sigue la estructura del mockup de referencia: crema, rojo, azul marino y amarillo, con cintas rojas y sellos amarillos.
 
 - **Banderola animada "¡Cerca de ti!"** en la portada: la cinta ondea y el texto se desliza sobre ella. Se pausa fuera de pantalla y con "reducir movimiento".
 - **Promos de la semana en movimiento:** anaquel que avanza solo, con productos grandes y chicos y etiqueta amarilla de precio. Se pausa con el cursor o con el botón "Pausar".
@@ -18,7 +18,7 @@ El botón **"Ver qué cambia"** muestra notas de antes y después en cada secci�
 
 ## Pendientes antes de publicarlo como sitio oficial
 
-- **Fotos:** las de `img/` están recortadas del mockup de referencia. Reemplazar por fotos reales del catálogo y de una tienda.
+- **Imágenes:** las de `img/` son ilustraciones vectoriales provisionales hechas por Desruptivo. Reemplazar por fotos reales del catálogo y de una tienda (mismo nombre de archivo, formato 4:3 para productos).
 - Conectar las promociones al catálogo semanal real.
 - Conectar el buscador de tiendas al listado completo con coordenadas.
 - Confirmar la paleta y tipografías con el manual de marca de Dunosusa.
@@ -32,4 +32,4 @@ El botón **"Ver qué cambia"** muestra notas de antes y después en cada secci�
 - `index.html`: página principal
 - `styles.css`: estilos
 - `script.js`: anaquel animado, lista, catálogo, buscador de tiendas, menú, horarios y notas
-- `img/`: imágenes provisionales
+- `img/`: ilustraciones provisionales (SVG)

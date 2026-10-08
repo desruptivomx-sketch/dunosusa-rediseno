@@ -108,7 +108,7 @@ svg.ico-fill { fill: currentColor; stroke: none; }
 .search button svg { width: 20px; height: 20px; stroke-width: 2.4; }
 .search button:hover { background: var(--cream); }
 
-.btn-near { min-height: 50px; padding: 8px 22px 8px 18px; border-radius: 18px; font-size: 13.5px; text-align: left; gap: 10px; }
+.btn-near { flex: none; white-space: nowrap; min-height: 50px; padding: 8px 22px 8px 18px; border-radius: 18px; font-size: 13.5px; text-align: left; gap: 10px; }
 .btn-near svg { width: 22px; height: 22px; }
 .nav-toggle { display: none; }
 
@@ -119,7 +119,7 @@ svg.ico-fill { fill: currentColor; stroke: none; }
   -webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0,0,0,.35) 12%, #000 34%);
           mask-image: linear-gradient(90deg, transparent 0, rgba(0,0,0,.35) 12%, #000 34%);
 }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
 
 .ribbon { position: absolute; pointer-events: none; overflow: visible; fill: none; stroke: none; }
 .ribbon-desk { inset: 0; width: 100%; height: 100%; z-index: 0; }
@@ -212,7 +212,7 @@ svg.ico-fill { fill: currentColor; stroke: none; }
 .pcard-big { width: 280px; font-size: 17px; }
 .pcard-small { width: 186px; font-size: 14px; }
 .pcard-media { position: relative; aspect-ratio: 4 / 3; border-radius: 20px; background: var(--bg, var(--cream)); }
-.pcard-media img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.pcard-media img { width: 100%; height: 100%; object-fit: contain; border-radius: inherit; padding: 6%; }
 .ptag {
   position: absolute; right: -4%; bottom: -6%; min-width: 50%;
   background: var(--yellow); color: var(--ink); border-radius: .8em; padding: .3em .7em .35em .55em;
@@ -273,9 +273,7 @@ svg.ico-fill { fill: currentColor; stroke: none; }
 .rhythm-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, .6fr) minmax(0, .5fr); gap: clamp(20px, 3vw, 40px); align-items: center; padding-top: 110px; }
 .rhythm-media { position: relative; align-self: start; }
 .rhythm-media img {
-  width: 100%; height: auto; aspect-ratio: 1040 / 378; object-fit: cover; border-radius: var(--r-lg);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 26%, #000 86%, transparent 100%);
-          mask-image: linear-gradient(90deg, transparent 0, #000 26%, #000 86%, transparent 100%);
+  width: 100%; height: auto; aspect-ratio: 1040 / 380; object-fit: contain; margin-top: 44px;
 }
 .rhythm-swoosh { position: absolute; z-index: 3; left: -90px; top: -150px; width: 720px; height: 380px; overflow: visible; pointer-events: none; }
 .rhythm-swoosh path { fill: none; stroke: var(--red); stroke-width: 96; }
@@ -408,7 +406,7 @@ svg.ico-fill { fill: currentColor; stroke: none; }
   background: #fff; border-radius: 20px; padding: 14px; display: grid; grid-template-columns: 64px minmax(0, 1fr); grid-template-rows: auto 1fr auto; gap: 4px 12px;
 }
 .offer-thumb { grid-row: 1 / 3; width: 64px; height: 64px; border-radius: 16px; overflow: hidden; background: var(--bg, var(--cream-2)); color: var(--red); display: grid; place-items: center; }
-.offer-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.offer-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
 .offer-thumb svg { width: 32px; height: 32px; stroke-width: 1.9; }
 .offer h3 { font-size: 15px; font-weight: 700; line-height: 1.25; }
 .offer-pres { font-size: 13px; color: var(--muted); }

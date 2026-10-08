@@ -1,5 +1,5 @@
 // Datos de muestra para la propuesta. En la versión final vienen del catálogo semanal y del listado de tiendas.
-// Las fotos están recortadas del mockup de referencia; se reemplazan por las del catálogo real.
+// Las ilustraciones son provisionales; se reemplazan por las fotos del catálogo real.
 const DEPTOS = {
   frutas: "Frutas y verduras",
   carnes: "Carnes",
@@ -12,12 +12,12 @@ const DEPTOS = {
 
 // tam: "big" o "small" define el tamaño en el anaquel animado de la portada
 const PRODUCTOS = [
-  { id: "platano", cat: "frutas", nombre: "Plátano Chiapas", pres: "Kilo", precio: 24.9, unidad: "kg", antes: 29.9, img: "img/p-platano.webp", bg: "#F5EFE9", tam: "big" },
-  { id: "leche", cat: "lacteos", nombre: "Leche Lala entera", pres: "Caja de 1 L", precio: 27.9, unidad: "pz", antes: 30.5, img: "img/p-leche.webp", bg: "#F5EEE8", tam: "small" },
-  { id: "res", cat: "carnes", nombre: "Bistec de res", pres: "Kilo", precio: 169, unidad: "kg", antes: 189, img: "img/p-res.webp", bg: "#1D2A4A", tam: "small" },
-  { id: "huevo", cat: "lacteos", nombre: "Huevo blanco", pres: "30 piezas", precio: 49, unidad: "pz", antes: 62, img: "img/p-huevo.webp", bg: "#F4EEE7", tam: "big" },
-  { id: "limpiador", cat: "limpieza", nombre: "Limpiador multiusos", pres: "Atomizador de 650 ml", precio: 29.9, unidad: "pz", antes: 36.5, img: "img/p-limpiador.webp", bg: "#ECE4D9", tam: "small" },
-  { id: "jitomate", cat: "frutas", nombre: "Jitomate saladet", pres: "Kilo", precio: 19.9, unidad: "kg", antes: 26.9, img: "img/p-jitomate.webp", bg: "#E41D1E", tam: "small" },
+  { id: "platano", cat: "frutas", nombre: "Plátano Chiapas", pres: "Kilo", precio: 24.9, unidad: "kg", antes: 29.9, img: "img/p-platano.svg", bg: "#FFF1C9", tam: "big" },
+  { id: "leche", cat: "lacteos", nombre: "Leche entera", pres: "Caja de 1 L", precio: 27.9, unidad: "pz", antes: 30.5, img: "img/p-leche.svg", bg: "#E7EEF8", tam: "small" },
+  { id: "res", cat: "carnes", nombre: "Bistec de res", pres: "Kilo", precio: 169, unidad: "kg", antes: 189, img: "img/p-res.svg", bg: "#F6E3DC", tam: "small" },
+  { id: "huevo", cat: "lacteos", nombre: "Huevo blanco", pres: "30 piezas", precio: 49, unidad: "pz", antes: 62, img: "img/p-huevo.svg", bg: "#F3ECE2", tam: "big" },
+  { id: "limpiador", cat: "limpieza", nombre: "Limpiador multiusos", pres: "Atomizador de 650 ml", precio: 29.9, unidad: "pz", antes: 36.5, img: "img/p-limpiador.svg", bg: "#DDEBF7", tam: "small" },
+  { id: "jitomate", cat: "frutas", nombre: "Jitomate saladet", pres: "Kilo", precio: 19.9, unidad: "kg", antes: 26.9, img: "img/p-jitomate.svg", bg: "#FDE3DE", tam: "small" },
   { id: "pollo", cat: "carnes", nombre: "Pierna y muslo de pollo", pres: "Kilo", precio: 64.9, unidad: "kg", antes: 74.9 },
   { id: "aceite", cat: "abarrotes", nombre: "Aceite vegetal", pres: "Botella de 1 L", precio: 34.9, unidad: "pz", antes: 41.5 },
   { id: "arroz", cat: "abarrotes", nombre: "Arroz súper extra", pres: "Bolsa de 1 kg", precio: 24.5, unidad: "pz", antes: 29 },
@@ -104,7 +104,7 @@ function tarjeta(p, i) {
   return `
     <article class="pcard pcard-${p.tam}">
       <div class="pcard-media" style="--bg:${p.bg}">
-        <img src="${p.img}" alt="" width="645" height="483" ${i > 3 ? 'loading="lazy"' : ""}>
+        <img src="${p.img}" alt="" width="640" height="480" ${i > 3 ? 'loading="lazy"' : ""}>
         ${etiqueta(p)}
       </div>
       <div class="pcard-foot">
