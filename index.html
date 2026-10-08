@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="styles.css?v=5">
   <link rel="stylesheet" href="fonts.css?v=1">
   <link rel="stylesheet" href="logo.css?v=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="mapa.css?v=1">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -41,7 +43,7 @@
         <button type="submit" aria-label="Buscar">⌕</button>
       </form>
 
-      <a class="store-pill" href="#tiendas">
+      <a class="store-pill" href="#tiendas" data-locate>
         <span class="pin" aria-hidden="true">●</span>
         <span>Mi tienda<br>
 <strong>más cercana</strong>
@@ -267,7 +269,7 @@
         <img src="img/equipo/30-interior-de-tienda.webp" alt="Pasillo de supermercado con frutas y verduras" width="1600" height="1200" loading="lazy" decoding="async">
         <div class="fresh-copy">Frescura,<br>calidad<br>y ahorro</div>
       </div>
-      <div class="finder" id="tiendas">
+      <div class="finder" id="buscar-tienda">
         <div class="finder-title">
 <span class="finder-pin">●</span>
 <strong>Encuentra tu<br>tienda más cercana</strong>
@@ -279,6 +281,46 @@
         </form>
         <p id="store-message" class="store-message" aria-live="polite">
 </p>
+      </div>
+    </section>
+
+    <section class="tiendas wrap" id="tiendas" aria-labelledby="tiendas-title">
+      <div class="tiendas-head">
+        <div>
+          <p class="section-kicker">Nuestras tiendas</p>
+          <h2 id="tiendas-title">Tu tienda,<br>más cerca.</h2>
+        </div>
+        <p>Cerca de 560 tiendas en Yucatán, Campeche, Quintana Roo, Tabasco y Chiapas. Abiertas todos los días de 7:00 a 22:00.</p>
+      </div>
+
+      <div class="tiendas-tools">
+        <form class="tiendas-search" role="search" id="map-form">
+          <label class="sr-only" for="map-query">Ciudad, colonia o municipio</label>
+          <input id="map-query" type="search" placeholder="Ciudad, colonia o municipio" autocomplete="off">
+        </form>
+        <button class="yellow-button tiendas-locate" type="button" id="locate">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3"/></svg>
+          Usar mi ubicación
+        </button>
+        <div class="tiendas-chips" role="group" aria-label="Filtrar por estado">
+          <button type="button" aria-pressed="true" data-state="todos">Todas</button>
+          <button type="button" aria-pressed="false" data-state="Yucatán">Yucatán</button>
+          <button type="button" aria-pressed="false" data-state="Campeche">Campeche</button>
+          <button type="button" aria-pressed="false" data-state="Quintana Roo">Quintana Roo</button>
+        </div>
+      </div>
+      <p class="tiendas-status" id="tiendas-status" aria-live="polite"></p>
+
+      <div class="tiendas-layout">
+        <div class="mapa-wrap">
+          <div id="store-map" class="mapa" role="region" aria-label="Mapa de tiendas Dunosusa"></div>
+          <p class="mapa-fallback" id="map-fallback" hidden>No se pudo cargar el mapa. Usa la lista o el botón "Cómo llegar".</p>
+        </div>
+        <div class="tiendas-results">
+          <p class="tiendas-count" id="results-count" aria-live="polite"></p>
+          <ol class="tiendas-list" id="store-list"></ol>
+          <button class="yellow-button tiendas-more" type="button" id="more-stores" hidden>Ver todas</button>
+        </div>
       </div>
     </section>
 
@@ -571,5 +613,7 @@
   <div class="concept-badge">Concepto · Desruptivo</div>
   <script src="script.js?v=5">
 </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="mapa.js?v=1"></script>
 </body>
 </html>

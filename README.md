@@ -33,3 +33,15 @@ python3 -m http.server 8765
 Abrir `http://localhost:8765`. Archivos principales: `index.html`, `styles.css`, `fonts.css` y `script.js`.
 
 Antes de convertirlo en sitio oficial: conectar catálogo, promociones y directorio de tiendas reales; confirmar disponibilidad de servicios; validar imágenes, textos y tipografías con la marca. Se conserva el logotipo vectorial local incorporado recientemente al encabezado.
+
+## Mapa de tiendas
+
+Sección `#tiendas` con mapa funcional (Leaflet + OpenStreetMap/CARTO, sin llave de pago). Archivos propios: `mapa.js` y `mapa.css`.
+
+- Pines de todas las tiendas, filtrados por texto (ciudad, colonia o municipio) y por estado.
+- "Usar mi ubicación" y "Mi tienda más cercana" ubican al visitante, ordenan por distancia y abren la tienda más cercana.
+- "Ver en el mapa" centra la tienda; tocar un pin resalta su tarjeta. Cada tienda tiene "Cómo llegar" en Google Maps.
+- El buscador del banner amarillo filtra las tiendas y lleva al mapa.
+- El mapa no secuestra el scroll: zoom con la rueda después de un clic; en celular se mueve con dos dedos.
+
+Pendiente: conectar al listado completo de ~560 tiendas con coordenadas exactas (las actuales son aproximadas), agrupar pines cercanos y habilitar búsqueda por código postal.
