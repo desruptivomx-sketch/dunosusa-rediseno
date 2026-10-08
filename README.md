@@ -1,29 +1,28 @@
 # Propuesta de rediseño: Dunosusa
 
-Propuesta de sitio web para [Abarrotes Dunosusa](https://www.dunosusa.com.mx) elaborada por **Desruptivo, Agencia Creativa Integral**, a partir de la revisión del sitio actual.
+Propuesta de sitio web para [Abarrotes Dunosusa](https://www.dunosusa.com.mx) elaborada por **Desruptivo, Agencia Creativa Integral**.
 
-No es el sitio oficial. La página lleva `noindex` para que Google no la muestre en lugar del sitio real. Los precios y el listado de tiendas son de muestra.
+No es el sitio oficial. La página lleva `noindex` para que Google no la muestre en lugar del sitio real. Precios, fotos y listado de tiendas son de muestra.
 
-## Qué corrige respecto al sitio actual
+## Versión 2: "Tu Dunosusa, más cerca"
 
-- **Ofertas sin registro.** El catálogo actual pide crear cuenta o entrar con Google. Aquí las ofertas de la semana son lo primero que se ve, se filtran por departamento y cada una se puede compartir por WhatsApp.
-- **Menú por tareas.** El sitio actual tiene 8 accesos en imagen y un menú de 18 opciones. Aquí van al frente ofertas, tiendas, pickup y facturación; lo demás se agrupa por tipo de visitante.
-- **Buscador de tiendas que funciona.** Por colonia o municipio, por estado o con la ubicación del celular, con indicador de abierto/cerrado y ruta en Google Maps. Reemplaza el PDF de ubicaciones.
-- **Pickup en tres pasos** en lugar de la guía de 11.
-- **Facturación** con sus requisitos a la vista. Se recomienda mover el portal a https.
-- **Servicios con nombre y descripción** (cerveza, vinos, congelados, despensas, Western Union, Amazon Hub, Va y Ven, El Sembrador, Primero el planeta) en lugar de íconos en imagen.
-- **Entradas separadas** para tenderos y negocios, proveedores, bolsa de trabajo y ofrecimiento de terrenos.
-- **Pie de página único**, con horarios por pestaña y sin el enlace a Twitter.
-- Título y meta descripción propios, barra de navegación inferior en celular, foco visible y textos en español claro.
+Reconstruida sobre el mockup visual aprobado: crema, rojo, azul marino y amarillo, con cintas rojas y sellos amarillos.
+
+- **Banderola animada "¡Cerca de ti!"** en la portada: la cinta ondea y el texto se desliza sobre ella. Se pausa fuera de pantalla y con "reducir movimiento".
+- **Promos de la semana en movimiento:** anaquel que avanza solo, con productos grandes y chicos y etiqueta amarilla de precio. Se pausa con el cursor o con el botón "Pausar".
+- **Mi lista:** el botón "+" agrega productos; la lista se envía por WhatsApp o se lleva a pickup.
+- **Catálogo completo** desde "Ver todas las promociones", el buscador del header o cada categoría, con filtros por departamento.
+- Se conservan las correcciones de la versión 1: buscador de tiendas con GPS, pickup en 3 pasos, facturación con requisitos a la vista, servicios con nombre y descripción, entradas para tenderos, proveedores y empleo, y footer único con horarios por pestaña.
 
 El botón **"Ver qué cambia"** muestra notas de antes y después en cada sección, para presentar la propuesta.
 
 ## Pendientes antes de publicarlo como sitio oficial
 
-- Conectar las ofertas al catálogo semanal real y agregar fotos de producto.
-- Conectar el buscador al listado completo de tiendas con coordenadas.
-- Ajustar la paleta al manual de marca de Dunosusa.
-- Confirmar la descripción de El Sembrador, Va y Ven, Despensas y la página de terrenos, y la regla de facturación del mes en curso.
+- **Fotos:** las de `img/` están recortadas del mockup de referencia. Reemplazar por fotos reales del catálogo y de una tienda.
+- Conectar las promociones al catálogo semanal real.
+- Conectar el buscador de tiendas al listado completo con coordenadas.
+- Confirmar la paleta y tipografías con el manual de marca de Dunosusa.
+- Confirmar El Sembrador, Va y Ven, Despensas, la página de terrenos y la regla de facturación del mes en curso.
 - Subir el logotipo al repositorio. Por ahora se carga desde `dunosusa.com.mx`.
 - Mover el portal de facturación a https.
 - Quitar la barra de "propuesta", el botón de notas y la etiqueta `noindex`.
@@ -32,4 +31,5 @@ El botón **"Ver qué cambia"** muestra notas de antes y después en cada secci�
 
 - `index.html`: página principal
 - `styles.css`: estilos
-- `script.js`: ofertas, buscador de tiendas, menú, horarios y notas de la propuesta
+- `script.js`: anaquel animado, lista, catálogo, buscador de tiendas, menú, horarios y notas
+- `img/`: imágenes provisionales

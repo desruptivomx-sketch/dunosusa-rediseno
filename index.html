@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Dunosusa | Ofertas de la semana, tiendas cerca de ti y pickup</title>
-  <meta name="description" content="Abarrotes Dunosusa: ofertas de la semana en despensa, lácteos, limpieza e higiene, más de 560 tiendas en el sureste de México, compra para recoger y facturación en línea.">
+  <title>Dunosusa | Tu súper más cerca: promos de la semana y tiendas</title>
+  <meta name="description" content="Abarrotes Dunosusa: promociones de la semana en frutas, carnes, lácteos, abarrotes y limpieza, cerca de 560 tiendas en el sureste de México, compra para recoger y facturación en línea.">
   <!-- Propuesta de rediseño: no indexar para no competir con el sitio oficial -->
   <meta name="robots" content="noindex, nofollow">
-  <meta property="og:title" content="Dunosusa: ofertas de la semana">
-  <meta property="og:description" content="Precios bajos todos los días en más de 560 tiendas del sureste.">
+  <meta property="og:title" content="Tu Dunosusa, más cerca">
+  <meta property="og:description" content="Solo precios bajos. Todos los días. Cerca de 560 tiendas en el sureste.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#D7141F">
+  <meta name="theme-color" content="#E31B1E">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/tienda.webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,219 +23,346 @@
 <a class="skip" href="#contenido">Saltar al contenido</a>
 
 <div class="concept-bar" role="note">
-  Propuesta de rediseño elaborada por <strong>Desruptivo</strong>. No es el sitio oficial de Dunosusa; precios y tiendas son de muestra.
+  Propuesta de rediseño elaborada por <strong>Desruptivo</strong>. No es el sitio oficial de Dunosusa; precios, fotos y tiendas son de muestra.
 </div>
 
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="#inicio" aria-label="Dunosusa, inicio">
-      <img src="https://www.dunosusa.com.mx/images/logo-hd.svg" alt="Dunosusa" width="150" height="44"
+      <img src="https://www.dunosusa.com.mx/images/logo-hd.svg" alt="Dunosusa" width="164" height="40"
            onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'brand-text',textContent:'Dunosusa'}))">
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+
     <nav id="menu" class="nav" aria-label="Principal">
-      <a href="#ofertas">Ofertas</a>
+      <a href="#inicio" aria-current="page">Inicio</a>
+      <a href="#promociones">Promociones</a>
       <a href="#tiendas">Tiendas</a>
-      <a href="#pickup">Pedir para recoger</a>
-      <a href="#facturar">Facturar</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#negocios">Negocios y empleo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+
+    <form class="search" role="search" id="search-form">
+      <label class="sr-only" for="buscar">Buscar en las promociones</label>
+      <input id="buscar" type="search" placeholder="Busca un producto, marca o categoría…" autocomplete="off">
+      <button type="submit" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+      </button>
+    </form>
+
+    <a class="btn btn-red btn-near" href="#tiendas" id="near-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2z"/></svg>
+      <span>Mi tienda<br>más cercana</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
   </div>
-  <aside class="note" hidden>
-    <b>Antes:</b> 8 accesos con íconos en imagen y un menú de 18 opciones que mezclaba clientes, proveedores y empleo.
-    <b>Ahora:</b> las cuatro cosas que más se buscan van al frente, y lo demás se agrupa por tipo de visitante.
+  <aside class="note wrap" hidden>
+    <b>Antes:</b> 8 accesos en imagen y un menú de 18 opciones; para ver precios había que registrarse.
+    <b>Ahora:</b> cinco secciones, un buscador que encuentra productos en las promociones y un botón que ubica tu tienda más cercana con el GPS del celular.
   </aside>
 </header>
 
 <main id="contenido">
 
-  <!-- OFERTAS -->
-  <section id="inicio" class="hero">
-    <div class="wrap" id="ofertas">
-      <div class="hero-head">
-        <h1>Ofertas de esta semana</h1>
-        <p class="hero-lede">Del miércoles 7 al martes 13 de octubre en todas las tiendas Dunosusa. Sin registrarte.</p>
-      </div>
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero-photo">
+      <img src="img/tienda.webp" alt="Fachada de una tienda Dunosusa" width="768" height="688">
+    </div>
 
-      <div class="chips" role="group" aria-label="Filtrar ofertas por departamento">
-        <button class="chip" aria-pressed="true" data-cat="todo">Todo</button>
-        <button class="chip" aria-pressed="false" data-cat="despensa">Despensa</button>
-        <button class="chip" aria-pressed="false" data-cat="lacteos">Lácteos y huevo</button>
-        <button class="chip" aria-pressed="false" data-cat="salchichoneria">Salchichonería</button>
-        <button class="chip" aria-pressed="false" data-cat="limpieza">Limpieza</button>
-        <button class="chip" aria-pressed="false" data-cat="higiene">Higiene</button>
-        <button class="chip" aria-pressed="false" data-cat="bebidas">Bebidas</button>
-      </div>
+    <!-- Banderola animada: escritorio -->
+    <svg class="deco ribbon ribbon-desk" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="rib-grad" gradientUnits="userSpaceOnUse" x1="0" y1="620" x2="1240" y2="0">
+          <stop offset="0" stop-color="#B5121B"/>
+          <stop offset=".38" stop-color="#E31B1E"/>
+          <stop offset=".62" stop-color="#F2312B"/>
+          <stop offset="1" stop-color="#D3161D"/>
+        </linearGradient>
+        <path id="rib-d" pathLength="1000" d="M-80 610 C 300 650 600 430 905 400 C 1150 376 1300 470 1540 430">
+          <animate attributeName="d" dur="8s" repeatCount="indefinite" calcMode="spline"
+            keyTimes="0;.33;.66;1" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"
+            values="M-80 610 C 300 650 600 430 905 400 C 1150 376 1300 470 1540 430;
+                    M-80 625 C 320 660 630 450 910 382 C 1160 350 1300 500 1540 445;
+                    M-80 595 C 280 630 580 410 900 412 C 1140 412 1310 445 1540 412;
+                    M-80 610 C 300 650 600 430 905 400 C 1150 376 1300 470 1540 430"/>
+        </path>
+      </defs>
+      <use href="#rib-d" class="rib-shadow"/>
+      <use href="#rib-d" class="rib-body" stroke="url(#rib-grad)"/>
+      <use href="#rib-d" class="rib-fold"/>
+      <text class="rib-text" dy="15">
+        <textPath href="#rib-d" startOffset="62%" text-anchor="middle">¡CERCA DE TI!
+          <animate attributeName="startOffset" dur="8s" repeatCount="indefinite" calcMode="spline"
+            keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="59%;65%;59%"/>
+        </textPath>
+      </text>
+    </svg>
 
-      <ul class="tags" id="tag-list" aria-live="polite"></ul>
-
-      <div class="hero-actions">
-        <button class="btn btn-yellow" id="more-tags" aria-controls="tag-list" aria-expanded="false">Ver todas las ofertas</button>
-        <a class="btn btn-line" href="#" aria-disabled="true" title="En la versión final, PDF del folleto semanal">Descargar folleto</a>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span class="l1">Tu Dunosusa,</span> <span class="l2">más cerca</span></h1>
+        <p class="hero-lede">Solo precios bajos. Todos los días.</p>
+        <div class="hero-cta">
+          <a class="btn btn-red btn-lg" href="#tiendas" data-locate>Encuentra tu tienda
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </a>
+          <p class="hero-fact">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2z"/></svg>
+            <span>Cerca de 560 tiendas<br>en el sureste de México.</span>
+          </p>
+        </div>
       </div>
     </div>
-    <aside class="note" hidden>
-      <b>Antes:</b> para ver el catálogo había que registrarse o entrar con Google.
-      <b>Ahora:</b> las ofertas son lo primero que se ve, se filtran por departamento y se pueden compartir por WhatsApp.
+
+    <!-- Banderola animada: celular -->
+    <svg class="deco ribbon ribbon-mob" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <defs>
+        <path id="rib-m" pathLength="1000" d="M-40 250 C 70 285 160 175 250 185 C 330 194 360 245 440 225">
+          <animate attributeName="d" dur="8s" repeatCount="indefinite" calcMode="spline"
+            keyTimes="0;.33;.66;1" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"
+            values="M-40 250 C 70 285 160 175 250 185 C 330 194 360 245 440 225;
+                    M-40 262 C 80 290 150 190 252 172 C 340 158 360 250 440 235;
+                    M-40 240 C 60 275 170 165 248 196 C 320 222 365 238 440 212;
+                    M-40 250 C 70 285 160 175 250 185 C 330 194 360 245 440 225"/>
+        </path>
+      </defs>
+      <use href="#rib-m" class="rib-shadow"/>
+      <use href="#rib-m" class="rib-body" stroke="url(#rib-grad)"/>
+      <text class="rib-text" dy="11">
+        <textPath href="#rib-m" startOffset="48%" text-anchor="middle">¡CERCA DE TI!
+          <animate attributeName="startOffset" dur="8s" repeatCount="indefinite" calcMode="spline"
+            keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="44%;52%;44%"/>
+        </textPath>
+      </text>
+    </svg>
+
+    <aside class="note wrap" hidden>
+      <b>Antes:</b> la portada abría con un carrusel de banners y el dato de tiendas no coincidía entre páginas (500 en una, 540 en otra).
+      <b>Ahora:</b> una sola promesa, un botón para encontrar tu tienda y la misma cifra en todo el sitio.
     </aside>
   </section>
 
-  <!-- ACCESOS RÁPIDOS -->
+  <!-- ACCESOS -->
   <nav class="quick" aria-label="Accesos rápidos">
-    <div class="wrap quick-grid">
-      <a href="#tiendas">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-        <span>Encuentra tu tienda</span>
-      </a>
-      <a href="#pickup">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
-        <span>Pide para recoger</span>
-      </a>
-      <a href="#facturar">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>
-        <span>Factura tu compra</span>
-      </a>
-      <a href="#negocios">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l1.5-5h15L21 10"/><path d="M4 10v10h16V10"/><path d="M3 10h18"/><path d="M10 20v-5h4v5"/></svg>
-        <span>Compra de mayoreo</span>
-      </a>
+    <div class="wrap">
+      <ul class="quick-list">
+        <li><a href="#promociones">
+          <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M3 12.2V4a1 1 0 0 1 1-1h8.2a1 1 0 0 1 .7.3l8 8a1 1 0 0 1 0 1.4l-8.2 8.2a1 1 0 0 1-1.4 0l-8-8a1 1 0 0 1-.3-.7zM7.5 9A1.5 1.5 0 1 0 7.5 6a1.5 1.5 0 0 0 0 3z"/></svg></span>
+          <span class="q-txt"><b>Promociones</b><small>Ahorra todos los días</small></span></a></li>
+        <li><a href="#productos">
+          <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M2 3.5h2.6l2.3 11.2a1.5 1.5 0 0 0 1.5 1.2h9.4a1.5 1.5 0 0 0 1.4-1.1L21.5 7H6.1"/><circle cx="9" cy="20" r="1.7"/><circle cx="17.5" cy="20" r="1.7"/></svg></span>
+          <span class="q-txt"><b>Productos</b><small>Todo para tu hogar</small></span></a></li>
+        <li><a href="#tiendas">
+          <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2z"/></svg></span>
+          <span class="q-txt"><b>Nuestras tiendas</b><small>La más cercana</small></span></a></li>
+        <li><a href="#promociones" data-open-promos>
+          <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 9v1.8h7V11zm0 4v1.8h7V15zm0-8v1.8h4V7z"/></svg></span>
+          <span class="q-txt"><b>Folleto</b><small>Ofertas de la semana</small></span></a></li>
+        <li><a href="https://empleos.dunosusa.com.mx/">
+          <span class="q-ico"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><circle cx="9" cy="7.5" r="3.5"/><circle cx="17" cy="8.5" r="2.8"/><path d="M2 20c0-3.9 3.1-7 7-7s7 3.1 7 7zM15.2 13.2A6 6 0 0 1 22 19v1h-4.6a8.5 8.5 0 0 0-2.2-6.8z"/></svg></span>
+          <span class="q-txt"><b>Trabaja con nosotros</b><small>Únete al equipo</small></span></a></li>
+      </ul>
     </div>
   </nav>
 
+  <!-- PROMOS DE LA SEMANA -->
+  <section class="promos" id="promociones" aria-labelledby="promos-title">
+    <svg class="deco wave wave-top" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90V58C220 8 470 4 760 34s560 40 680-14v70z"/></svg>
+    <div class="promos-body">
+      <div class="wrap promos-grid">
+        <div class="promos-head">
+          <h2 id="promos-title"><span class="ph1">Las promos</span> <span class="ph2">de la semana</span></h2>
+          <p class="promos-dates">Del miércoles 7 al martes 13 de octubre. Sin registrarte.</p>
+          <div class="promos-actions">
+            <button class="btn btn-white" type="button" data-open-promos>Ver todas las promociones
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+            <button class="shelf-pause" type="button" id="shelf-pause" aria-pressed="false" aria-controls="shelf">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+              <span>Pausar</span>
+            </button>
+          </div>
+        </div>
+
+        <p class="sticker sticker-save" aria-hidden="true">
+          <span>¡Aquí siempre ahorras!</span>
+          <svg class="burst" viewBox="0 0 60 60"><path d="M30 4v14M48 12l-8 10M56 30H42"/></svg>
+        </p>
+
+        <div class="shelf" id="shelf" role="region" aria-label="Productos en promoción esta semana">
+          <div class="shelf-track" id="shelf-track"></div>
+        </div>
+      </div>
+    </div>
+    <svg class="deco wave wave-bottom" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0v40c180 46 420 50 720 22S1260 6 1440 46V0z"/></svg>
+    <aside class="note wrap" hidden>
+      <b>Antes:</b> para ver el catálogo había que crear cuenta o entrar con Google.
+      <b>Ahora:</b> las promos se mueven solas en la portada, sin registro; se pausan al pasar el cursor o con el botón, y el "+" arma una lista para enviar por WhatsApp o pedir para recoger.
+    </aside>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="cats" id="productos" aria-labelledby="cats-title">
+    <div class="wrap cats-grid">
+      <div class="cats-copy">
+        <h2 class="title-2" id="cats-title"><span class="t1">Todo para</span> <span class="t2">tu hogar</span></h2>
+        <p>Encuentra tus productos favoritos en un solo lugar: abarrotes, frutas y verduras, lácteos, carnes, limpieza y mucho más.</p>
+        <button class="btn btn-red" type="button" data-open-promos>Ver todas las categorías
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      <div class="rail">
+        <button class="rail-btn" type="button" data-rail="-1" aria-label="Categorías anteriores" aria-controls="cat-list">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <ul class="cat-list" id="cat-list">
+          <li><button class="cat" type="button" data-filter="frutas" style="--bg:#E41D1E;--fg:#fff"><img src="img/c-frutas.webp" alt="" width="375" height="354" loading="lazy"><span>Frutas<br>y verduras</span></button></li>
+          <li><button class="cat" type="button" data-filter="carnes" style="--bg:#1D2A4A;--fg:#fff"><img src="img/c-carnes.webp" alt="" width="390" height="345" loading="lazy"><span>Carnes</span></button></li>
+          <li><button class="cat" type="button" data-filter="lacteos" style="--bg:#EDE5DB;--fg:#1D2A4A"><img src="img/c-lacteos.webp" alt="" width="375" height="360" loading="lazy"><span>Lácteos<br>y refrigerados</span></button></li>
+          <li><button class="cat" type="button" data-filter="abarrotes" style="--bg:#FEC61A;--fg:#1D2A4A"><img src="img/c-abarrotes.webp" alt="" width="375" height="354" loading="lazy"><span>Abarrotes</span></button></li>
+          <li><button class="cat" type="button" data-filter="limpieza" style="--bg:#ECE4D9;--fg:#1D2A4A"><img src="img/c-limpieza.webp" alt="" width="369" height="354" loading="lazy"><span>Limpieza<br>del hogar</span></button></li>
+        </ul>
+        <button class="rail-btn" type="button" data-rail="1" aria-label="Más categorías" aria-controls="cat-list">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+    <aside class="note wrap" hidden>
+      <b>Antes:</b> los departamentos no existían en el sitio; todo pasaba por el catálogo con registro.
+      <b>Ahora:</b> cada categoría abre sus promociones de la semana.
+    </aside>
+  </section>
+
+  <!-- UN SÚPER A TU RITMO -->
+  <section class="rhythm" aria-labelledby="rhythm-title">
+    <svg class="deco rhythm-band" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70C300 10 620 0 900 30s420 60 540 30v80H0z"/></svg>
+    <div class="wrap rhythm-grid">
+      <div class="rhythm-media">
+        <img src="img/carrito.webp" alt="Carrito Dunosusa lleno de despensa" width="1040" height="378" loading="lazy">
+        <svg class="deco rhythm-swoosh" viewBox="0 0 720 380" aria-hidden="true" focusable="false">
+          <path id="swoosh" d="M30 400 C 70 300 150 200 270 150 C 400 100 560 108 720 110"/>
+          <text class="swoosh-text" dy="15"><textPath href="#swoosh" startOffset="40%" text-anchor="middle"><tspan class="w">UN SÚPER </tspan><tspan class="y">A TU RITMO</tspan></textPath></text>
+        </svg>
+        <h2 class="rhythm-title" id="rhythm-title"><span>Un súper</span> <span>a tu ritmo</span></h2>
+      </div>
+      <ul class="checks">
+        <li>Productos de calidad</li>
+        <li>Precios bajos siempre</li>
+        <li>Tiendas cerca de ti</li>
+        <li>Todo lo que necesitas</li>
+      </ul>
+      <p class="sticker sticker-near" aria-hidden="true">
+        <span>Tu Dunosusa de siempre, pero más cerca de ti</span>
+        <svg class="burst" viewBox="0 0 60 60"><path d="M24 4l4 14M40 6l-6 13M52 18l-11 8"/></svg>
+      </p>
+    </div>
+  </section>
+
   <!-- TIENDAS -->
-  <section id="tiendas" class="stores">
+  <section id="tiendas" class="stores" aria-labelledby="stores-title">
     <div class="wrap stores-grid">
       <div class="stores-intro">
-        <h2>Tu Dunosusa más cercano</h2>
-        <p>Más de 560 tiendas en Yucatán, Campeche, Quintana Roo, Tabasco y Chiapas. Abiertas todos los días de 7:00 a 22:00.</p>
+        <h2 class="title-2" id="stores-title"><span class="t1">Tu tienda</span> <span class="t2">más cercana</span></h2>
+        <p>Cerca de 560 tiendas en Yucatán, Campeche, Quintana Roo, Tabasco y Chiapas. Abiertas todos los días de 7:00 a 22:00.</p>
 
         <form class="finder" role="search" onsubmit="return false">
           <label for="q">Colonia, municipio o calle</label>
           <div class="finder-row">
             <input id="q" type="search" placeholder="Ej. Vista Alegre, Motul, Champotón" autocomplete="off">
-            <button type="button" class="btn btn-red" id="locate">Usar mi ubicación</button>
+            <button type="button" class="btn btn-red" id="locate">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="7"/></svg>
+              Usar mi ubicación
+            </button>
           </div>
           <p class="finder-status" id="finder-status" aria-live="polite"></p>
         </form>
 
-        <div class="chips chips-light" role="group" aria-label="Filtrar por estado">
-          <button class="chip" aria-pressed="true" data-state="todos">Todos</button>
-          <button class="chip" aria-pressed="false" data-state="Yucatán">Yucatán</button>
-          <button class="chip" aria-pressed="false" data-state="Campeche">Campeche</button>
-          <button class="chip" aria-pressed="false" data-state="Quintana Roo">Quintana Roo</button>
+        <div class="chips" role="group" aria-label="Filtrar por estado">
+          <button class="chip" type="button" aria-pressed="true" data-state="todos">Todos</button>
+          <button class="chip" type="button" aria-pressed="false" data-state="Yucatán">Yucatán</button>
+          <button class="chip" type="button" aria-pressed="false" data-state="Campeche">Campeche</button>
+          <button class="chip" type="button" aria-pressed="false" data-state="Quintana Roo">Quintana Roo</button>
         </div>
       </div>
 
       <div>
         <ol class="store-list" id="store-list"></ol>
-        <button class="btn btn-line-ink" id="more-stores" hidden>Ver más tiendas</button>
+        <button class="btn btn-line" type="button" id="more-stores" hidden>Ver más tiendas</button>
       </div>
     </div>
-    <aside class="note" hidden>
+    <aside class="note wrap" hidden>
       <b>Antes:</b> el buscador respondía que no había tiendas cercanas y la alternativa era un PDF de ubicaciones.
-      <b>Ahora:</b> se busca por colonia o municipio, o con la ubicación del celular, y la ruta se abre en Google Maps. La versión final se conecta al listado completo.
+      <b>Ahora:</b> se busca por colonia o municipio, o con la ubicación del celular, con ruta en Google Maps. La versión final se conecta al listado completo.
     </aside>
   </section>
 
-  <!-- PICKUP -->
-  <section id="pickup" class="pickup">
-    <div class="wrap pickup-grid">
-      <div>
+  <!-- PICKUP Y FACTURACIÓN -->
+  <section class="tasks" aria-label="Pedir para recoger y facturar">
+    <div class="wrap tasks-grid">
+      <article class="task task-pickup" id="pickup">
         <h2>Haz tu pedido y pásalo a recoger</h2>
-        <p>Arma tu despensa en línea y la tenemos lista en tu tienda, con lugar reservado para estacionarte. Si prefieres, te la llevamos a casa en el horario que elijas.</p>
+        <p>Arma tu despensa en línea y la tenemos lista en tu tienda, con lugar reservado para estacionarte.</p>
+        <ol class="steps">
+          <li><p><b>Elige tu tienda</b> La más cercana a tu casa o tu trabajo.</p></li>
+          <li><p><b>Arma tu canasta y paga</b> Con tarjeta de crédito o débito.</p></li>
+          <li><p><b>Avísanos al llegar</b> Te llevamos la compra al coche.</p></li>
+        </ol>
         <p class="fine">Compra mínima de $200. Aplica costo de servicio.</p>
-        <a class="btn btn-red" href="https://dunosusapromociones.com/pickup/sesion/login">Empezar mi pedido</a>
-      </div>
-      <ol class="steps">
-        <li><h3>Elige tu tienda</h3><p>La más cercana a tu casa o a tu trabajo.</p></li>
-        <li><h3>Arma tu canasta y paga</h3><p>Con tarjeta de crédito o débito. Te llega la confirmación por correo.</p></li>
-        <li><h3>Recoge o recibe</h3><p>Avísanos al llegar y te llevamos la compra al coche.</p></li>
-      </ol>
-    </div>
-    <aside class="note" hidden>
-      <b>Antes:</b> una guía de 11 pasos en otra página, con el botón al final.
-      <b>Ahora:</b> tres pasos y el botón a la vista. A futuro conviene que el pickup viva en el mismo dominio.
-    </aside>
-  </section>
+        <a class="btn btn-white" href="https://dunosusapromociones.com/pickup/sesion/login">Empezar mi pedido</a>
+      </article>
 
-  <!-- FACTURAR -->
-  <section id="facturar" class="invoice">
-    <div class="wrap invoice-inner">
-      <div class="ticket" aria-hidden="true">
-        <span>Ticket</span>
-        <span>Tienda 1003</span>
-        <span>Folio 000458213</span>
-        <span>Total $386.40</span>
-      </div>
-      <div>
+      <article class="task task-invoice" id="facturar">
+        <div class="ticket" aria-hidden="true">
+          <span class="ticket-brand">Dunosusa</span>
+          <span>Tienda 1003</span>
+          <span>Folio 000458213</span>
+          <span class="ticket-total">Total $386.40</span>
+        </div>
         <h2>Factura tu compra</h2>
         <p>Ten a la mano tu ticket, tu RFC y tus datos fiscales. Puedes facturar compras del mes en curso.</p>
-        <a class="btn btn-ink" href="http://facturacion.dunosusa.com.mx:8080/#/login">Ir al portal de facturación</a>
+        <a class="btn btn-yellow" href="http://facturacion.dunosusa.com.mx:8080/#/login">Ir al portal de facturación</a>
+      </article>
+    </div>
+    <aside class="note wrap" hidden>
+      <b>Antes:</b> el pickup era una guía de 11 pasos en otro dominio, y el portal de facturación abre en http sin cifrar, marcado como "No seguro" donde se escribe el RFC.
+      <b>Ahora:</b> pickup en tres pasos con el botón a la vista. <b>Propuesta:</b> mover facturación a https antes del relanzamiento.
+    </aside>
+  </section>
+
+  <!-- SERVICIOS Y OTROS PÚBLICOS -->
+  <section class="more" id="servicios" aria-labelledby="more-title">
+    <div class="wrap more-grid">
+      <div>
+        <h2 class="title-3" id="more-title">También en tu Dunosusa</h2>
+        <ul class="service-list">
+          <li><a href="https://dunosusa.com.mx/dunofrias/"><b>Cerveza fría</b><span>Dunofrías en tiendas seleccionadas.</span></a></li>
+          <li><a href="https://dunosusa.com.mx/vinosylicores/"><b>Vinos y licores</b><span>Para la reunión del fin de semana.</span></a></li>
+          <li><a href="https://www.dunosusa.com.mx/congelados"><b>Congelados</b><span>Carnes, pollo y más.</span></a></li>
+          <li><a href="https://dunosusa.com.mx/despensas/"><b>Despensas</b><span>Armadas para empresas y eventos.</span></a></li>
+          <li><a href="https://dunosusa.com.mx/westernunion/"><b>Western Union</b><span>Envía y recibe dinero.</span></a></li>
+          <li><a href="https://dunosusa.com.mx/amazon/"><b>Amazon Hub</b><span>Recoge tus paquetes en tienda.</span></a></li>
+          <li><a href="https://dunosusa.com.mx/vayven/"><b>Va y Ven</b><span>Tarjeta del transporte público.</span></a></li>
+          <li><a href="https://dunosusa.com.mx/elsembrador/"><b>El Sembrador</b><span>Conoce el programa.</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="title-3">Si vienes por otra cosa</h2>
+        <ul class="aud-list">
+          <li><a href="https://www.dunosusa.com.mx/ventas-mayoreo"><b>Tenderos y negocios</b><span>Precios de mayoreo para tiendas, restaurantes y medio mayoristas.</span></a></li>
+          <li><a href="#contacto"><b>Proveedores</b><span>Horarios de recepción de mercancía y de facturas.</span></a></li>
+          <li><a href="https://empleos.dunosusa.com.mx/"><b>Trabaja con nosotros</b><span>Empleos en tiendas, oficinas y centro de distribución.</span></a></li>
+          <li><a href="https://www.dunosusa.com.mx/terreno"><b>¿Tienes un terreno o local?</b><span>Propónlo para abrir una nueva tienda.</span></a></li>
+        </ul>
       </div>
     </div>
-    <aside class="note" hidden>
-      <b>Antes:</b> el portal abre en http, sin cifrar, en el puerto 8080, y el navegador lo marca como "No seguro" justo donde se escribe el RFC.
-      <b>Propuesta:</b> mover el portal a https antes de relanzar el sitio. Falta confirmar la regla de facturación del mes en curso.
-    </aside>
   </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="services">
-    <div class="wrap">
-      <h2>También en tu Dunosusa</h2>
-      <ul class="service-list">
-        <li><a href="https://dunosusa.com.mx/dunofrias/"><b>Cerveza fría</b><span>Dunofrías en tiendas seleccionadas.</span></a></li>
-        <li><a href="https://dunosusa.com.mx/vinosylicores/"><b>Vinos y licores</b><span>Para la reunión del fin de semana.</span></a></li>
-        <li><a href="https://www.dunosusa.com.mx/congelados"><b>Productos congelados</b><span>Carnes, pollo y más.</span></a></li>
-        <li><a href="https://dunosusa.com.mx/despensas/"><b>Despensas</b><span>Armadas para empresas y eventos.</span></a></li>
-        <li><a href="https://dunosusa.com.mx/westernunion/"><b>Western Union</b><span>Envía y recibe dinero.</span></a></li>
-        <li><a href="https://dunosusa.com.mx/amazon/"><b>Amazon Hub</b><span>Recoge tus paquetes en tienda.</span></a></li>
-        <li><a href="https://dunosusa.com.mx/vayven/"><b>Va y Ven</b><span>Tarjeta del transporte público.</span></a></li>
-        <li><a href="https://dunosusa.com.mx/elsembrador/"><b>El Sembrador</b><span>Conoce el programa.</span></a></li>
-        <li><a href="https://www.dunosusa.com.mx/primero-el-planeta"><b>Primero el planeta</b><span>Lo que hacemos por el medio ambiente.</span></a></li>
-      </ul>
-    </div>
-    <aside class="note" hidden>
-      <b>Antes:</b> cada servicio era un ícono en imagen arriba de la página, sin texto que Google pudiera leer.
-      <b>Ahora:</b> cada uno tiene nombre y una línea que dice qué es.
-    </aside>
-  </section>
-
-  <!-- NEGOCIOS Y EMPLEO -->
-  <section id="negocios" class="audiences">
-    <div class="wrap">
-      <h2>Si vienes por otra cosa</h2>
-      <div class="aud-rows">
-        <a class="aud" href="https://www.dunosusa.com.mx/ventas-mayoreo">
-          <h3>Tenderos y negocios</h3>
-          <p>Precios de mayoreo para tiendas, restaurantes y medio mayoristas.</p>
-        </a>
-        <a class="aud" href="#horarios">
-          <h3>Proveedores</h3>
-          <p>Horarios de recepción de mercancía y de facturas.</p>
-        </a>
-        <a class="aud" href="https://empleos.dunosusa.com.mx/">
-          <h3>Trabaja con nosotros</h3>
-          <p>Más de 5,000 empleos en tiendas, oficinas y centro de distribución.</p>
-        </a>
-        <a class="aud" href="https://www.dunosusa.com.mx/terreno">
-          <h3>¿Tienes un terreno o local?</h3>
-          <p>Propónlo para abrir una nueva tienda.</p>
-        </a>
-      </div>
-    </div>
-    <aside class="note" hidden>
-      <b>Antes:</b> mayoreo, empleo y proveedores estaban mezclados con las opciones del cliente.
-      <b>Ahora:</b> cada público tiene su propia entrada, sin estorbar al que viene por las ofertas.
-    </aside>
-  </section>
-
-  <!-- HISTORIA -->
-  <section class="story">
+  <!-- NOSOTROS -->
+  <section class="story" id="nosotros" aria-labelledby="story-title">
     <div class="wrap story-grid">
       <div>
-        <h2>Precios bajos todos los días, desde 1969</h2>
+        <h2 id="story-title">Precios bajos todos los días, desde 1969</h2>
         <p>Empezamos en una bodega de la calle 46 del centro de Mérida, vendiendo harina, azúcar y levadura a panaderos. Hoy somos la tienda de la esquina para familias, tenderos y restauranteros de cinco estados.</p>
       </div>
       <ol class="timeline">
@@ -246,17 +374,9 @@
     </div>
   </section>
 
-  <!-- APP -->
-  <section class="app">
-    <div class="wrap app-inner">
-      <p>Lleva las ofertas y tu tienda más cercana en el celular.</p>
-      <a class="btn btn-ink" href="https://www.dunosusa.com.mx/descarga">Descargar la app</a>
-    </div>
-  </section>
-
 </main>
 
-<footer class="site-footer" id="horarios">
+<footer class="site-footer" id="contacto">
   <div class="wrap footer-grid">
     <div>
       <h2 class="footer-title">Horarios</h2>
@@ -289,26 +409,70 @@
         <a href="https://www.instagram.com/dunosusaoficial/">Instagram</a>
         <a href="https://www.tiktok.com/@dunosusaoficial">TikTok</a>
       </p>
+      <p><a href="https://www.dunosusa.com.mx/descarga">Descarga la app</a></p>
       <p><a href="https://www.dunosusa.com.mx/aviso.pdf">Aviso de privacidad</a></p>
     </div>
   </div>
   <div class="wrap footer-legal">
     <p>Propuesta de rediseño por Desruptivo, Agencia Creativa Integral. Marca y logotipo propiedad de Abarrotes Dunosusa.</p>
   </div>
-  <aside class="note" hidden>
+  <aside class="note wrap" hidden>
     <b>Antes:</b> dirección, teléfono y horarios aparecían dos veces y seguía el enlace a Twitter.
     <b>Ahora:</b> un solo bloque, horarios por pestaña y las tres redes activas.
   </aside>
 </footer>
 
+<!-- Todas las promociones -->
+<dialog class="sheet" id="promos-dialog" aria-labelledby="sheet-title">
+  <div class="sheet-head">
+    <div>
+      <h2 id="sheet-title">Todas las promociones</h2>
+      <p class="sheet-sub">Del miércoles 7 al martes 13 de octubre en todas las tiendas.</p>
+    </div>
+    <button class="sheet-close" type="button" data-close aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="chips chips-scroll" role="group" aria-label="Filtrar por departamento" id="sheet-chips"></div>
+  <p class="sheet-query" id="sheet-query" hidden></p>
+  <ul class="offer-grid" id="offer-grid" aria-live="polite"></ul>
+</dialog>
+
+<!-- Mi lista -->
+<dialog class="sheet sheet-narrow" id="list-dialog" aria-labelledby="list-title">
+  <div class="sheet-head">
+    <div>
+      <h2 id="list-title">Mi lista</h2>
+      <p class="sheet-sub">Con precios de esta semana. Llévala a la tienda o pídela para recoger.</p>
+    </div>
+    <button class="sheet-close" type="button" data-close aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul class="list-items" id="list-items"></ul>
+  <div class="list-foot" id="list-foot">
+    <p class="list-total">Total aproximado <b id="list-total">$0.00</b></p>
+    <a class="btn btn-red" id="list-wa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+    <a class="btn btn-line" href="https://dunosusapromociones.com/pickup/sesion/login">Pedir para recoger</a>
+    <button class="link-btn" type="button" id="list-clear">Vaciar lista</button>
+  </div>
+</dialog>
+
+<button class="list-pill" type="button" id="list-pill" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3.5h2.6l2.3 11.2a1.5 1.5 0 0 0 1.5 1.2h9.4a1.5 1.5 0 0 0 1.4-1.1L21.5 7H6.1"/><circle cx="9" cy="20" r="1.5"/><circle cx="17.5" cy="20" r="1.5"/></svg>
+  Mi lista <span class="pill-count" id="list-count">0</span>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 <nav class="tabbar" aria-label="Navegación inferior">
-  <a href="#ofertas">Ofertas</a>
+  <a href="#promociones">Promos</a>
   <a href="#tiendas">Tiendas</a>
-  <a href="#pickup">Pickup</a>
+  <a href="#pickup">Recoger</a>
   <a href="#facturar">Facturar</a>
 </nav>
 
-<button class="notes-toggle" id="notes-toggle" aria-pressed="false">Ver qué cambia</button>
+<button class="notes-toggle" type="button" id="notes-toggle" aria-pressed="false">Ver qué cambia</button>
 
 <script src="script.js"></script>
 </body>
