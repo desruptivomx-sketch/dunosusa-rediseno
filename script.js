@@ -95,7 +95,7 @@
       --motion-shadow:0 0 0 1px rgba(36,28,20,.02),0 2px 6px rgba(36,28,20,.04),0 10px 24px rgba(36,28,20,.10);
     }
 
-    .motion-progress{position:fixed;left:0;top:0;width:100%;height:3px;background:#ffcc25;transform:scaleX(0);transform-origin:left center;z-index:999;pointer-events:none}
+    .motion-progress{position:fixed;left:0;top:0;width:100%;height:3px;background:#ffffff;transform:scaleX(0);transform-origin:left center;z-index:999;pointer-events:none}
     .site-header{transition:box-shadow .35s ease,transform .35s var(--motion-ease)}
     .site-header.is-compact{box-shadow:0 10px 26px rgba(120,0,8,.20)}
     .site-header.is-compact .brand{transform:scale(.94)}
@@ -105,7 +105,7 @@
     .search{transition:transform var(--motion-base) var(--motion-ease)}
     .search:focus-within{transform:scale(1.015)}
     .search input{transition:box-shadow var(--motion-fast) ease,transform var(--motion-fast) ease}
-    .search:focus-within input{box-shadow:0 0 0 4px rgba(255,204,37,.18)}
+    .search:focus-within input{box-shadow:0 0 0 4px rgba(255,255,255,.18)}
 
     .hero{--hero-scroll:0;--wave-y:0px;--wave-scale:1}
     .hero:after{transform:translateY(var(--wave-y)) rotate(-3deg) scaleX(var(--wave-scale));will-change:transform}
